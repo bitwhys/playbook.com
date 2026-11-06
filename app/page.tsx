@@ -25,7 +25,7 @@ export default function Home() {
         // TODO: rewrite sm:min-h-[32rem] to either sm:min-h-128 or use a custom class
         className=" flex min-h-96 flex-1 p-3 sm:min-h-[32rem] sm:p-5"
       >
-        <div className="drafting-grid min-w-0 flex-1 rounded-xl border border-line bg-gray-a3" />
+        <div className="drafting-grid min-w-0 flex-1 rounded-xl border border-line bg-panel" />
       </section>
     </>
   )
