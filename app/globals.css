@@ -1,5 +1,5 @@
-@import "../theme/styles.css";
-@import "tailwindcss";
+@import '../theme/styles.css';
+@import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark, .dark *));
 
@@ -83,7 +83,7 @@
   --color-line: var(--line);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-display: "Bluu Next", sans-serif;
+  --font-display: 'Bluu Next', sans-serif;
 }
 
 body {
@@ -105,7 +105,7 @@ body {
   height: 7px;
   border: 1px solid var(--color-gray-6);
   background: var(--surface);
-  content: "";
+  content: '';
   pointer-events: none;
 }
 

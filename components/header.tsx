@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 export const Header = () => {
   return (
     <header className="frame-rule relative flex min-h-18 flex-wrap border-b border-line">
@@ -24,5 +24,5 @@ export const Header = () => {
         Sports, politics &amp; the numbers behind them.
       </p>
     </header>
-  );
-};
+  )
+}

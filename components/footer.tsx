@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
@@ -8,5 +8,5 @@ export const Footer = () => {
       </Link>
       <p className="text-muted">A closer look at the numbers.</p>
     </footer>
-  );
-};
+  )
+}

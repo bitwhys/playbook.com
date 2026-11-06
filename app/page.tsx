@@ -11,7 +11,10 @@ export default function Home() {
         >
           Exploration Title
         </h1>
-        <p id="page-description" className="max-w-lg text-base leading-relaxed text-muted sm:text-lg">
+        <p
+          id="page-description"
+          className="max-w-lg text-base leading-relaxed text-muted sm:text-lg"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni
           atque in sunt asperiores nulla placeat.
         </p>
@@ -25,5 +28,5 @@ export default function Home() {
         <div className="drafting-grid min-w-0 flex-1 rounded-xl border border-line bg-gray-a3" />
       </section>
     </>
-  );
+  )
 }
