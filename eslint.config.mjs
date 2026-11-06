@@ -8,6 +8,9 @@ const eslintConfig = defineConfig([
   ...nextTs,
   eslintPluginTailwindcss.configs['flat/recommended'] ||
     eslintPluginTailwindcss.configs.recommended,
+  {
+    settings: { tailwindcss: { cssConfigPath: './app/globals.css' } },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:

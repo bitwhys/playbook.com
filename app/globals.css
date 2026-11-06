@@ -88,6 +88,15 @@
   --color-surface: var(--surface);
   --color-muted: var(--muted);
   --color-line: var(--line);
+  --color-popover: var(--color-gray-2);
+  --color-popover-foreground: var(--foreground);
+  --color-muted-foreground: var(--color-gray-11);
+  --color-primary: var(--foreground);
+  --color-primary-foreground: var(--background);
+  --color-accent: var(--color-gray-4);
+  --color-accent-foreground: var(--foreground);
+  --color-input: var(--line);
+  --color-ring: var(--color-gray-8);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-display: 'Bluu Next', sans-serif;

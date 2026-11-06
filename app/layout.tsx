@@ -45,7 +45,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           attribute='class'
           disableTransitionOnChange
           enableSystem
-          defaultTheme="dark"
+          defaultTheme="light"
         >
           <div className="site-frame mx-auto flex min-h-svh max-w-[1600px] flex-col border-x border-line root">
             <Header />
