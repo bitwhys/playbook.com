@@ -1,0 +1,9 @@
+import type { Metadata } from 'next'
+import { ExplorationIndex } from '@/components/exploration-index'
+import { explorationCategories } from '@/lib/explorations'
+
+export const metadata: Metadata = { title: explorationCategories.math.title }
+
+export default function Page() {
+  return <ExplorationIndex category="math" />
+}

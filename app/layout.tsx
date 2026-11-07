@@ -1,31 +1,31 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { ThemeProvider } from "@/components/theme-provider";
-import "./globals.css";
-import "@fontsource/bluu-next";
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
+import { ThemeProvider } from '@/components/theme-provider'
+import './globals.css'
+import '@fontsource/bluu-next'
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: {
-    default: "Playbook — Explorations in statistics",
-    template: "%s | Playbook",
+    default: 'Playbook — Explorations in statistics',
+    template: '%s | Playbook',
   },
   description:
-    "Exploring sports and politics through statistics, thoughtful analysis, and interactive tools.",
-};
+    'Exploring sports and politics through statistics, thoughtful analysis, and interactive tools.',
+}
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html
       lang="en"
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {/* .root allows base-ui portoled components to render always on top */}
 
         <ThemeProvider
-          attribute='class'
+          attribute="class"
           disableTransitionOnChange
           enableSystem
           defaultTheme="light"
@@ -61,5 +61,5 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
