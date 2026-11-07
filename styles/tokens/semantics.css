@@ -1,0 +1,52 @@
+@theme {
+  --color-surface: var(--surface);   /* page canvas */
+  --color-surface-raised: var(--surface-raised);   /* cards, docks, popovers */
+  --color-surface-sunken: var(--surface-sunken);   /* wells, recesses, code, chrome grounds */
+  --color-surface-sunken-alt: var(--surface-sunken-alt);  /* alpha well — tints whatever is under it */
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-active: var(--surface-active);
+  --color-surface-selected: var(--surface-selected);
+  --color-surface-muted: var(--surface-muted);
+
+  --color-panel: var(--panel);
+
+  --color-ink: var(--color-gray-12); /* foreground text */
+  --color-ink-alt: var(--color-gray-a12);
+  --color-ink-muted: var(--color-gray-11);
+  --color-ink-muted-alt: var(--color-gray-a11);
+  --color-ink-faint: var(--color-gray-10);
+  --color-ink-placeholder: var(--color-gray-9);
+  --color-ink-disabled: var(--color-gray-8);
+  --color-ink-inverse: var(--color-gray-1);
+
+  --color-line: var(--color-gray-6);
+  --color-line-strong: var(--color-gray-7);
+}
+
+@layer base {
+  :root {
+    --surface: var(--color-gray-2);
+    --surface-raised: #ffffff;
+    --surface-sunken: var(--gray-3);
+    --surface-sunken-alt: var(--gray-a3);
+    --surface-hover: var(--gray-3);
+    --surface-active: var(--gray-4);
+    --surface-selected: var(--gray-4);
+    --surface-muted: var(--gray-3);
+
+    --panel: var(--color-gray-3);
+  }
+
+  .dark {
+    --surface: var(--color-gray-1);
+    --surface-raised: var(--color-gray-1);
+    --surface-sunken: var(--color-gray-3);
+    --surface-sunken-alt: var(--color-gray-a3);
+    --surface-hover: var(--color-gray-3);
+    --surface-active: var(--color-gray-4);
+    --surface-selected: var(--color-gray-4);
+    --surface-muted: var(--color-gray-3);
+
+    --panel: var(--color-gray-3);
+  }
+}

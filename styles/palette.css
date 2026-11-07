@@ -1,0 +1,201 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/white-alpha.css";
+
+@import '@radix-ui/colors/sage.css';
+@import '@radix-ui/colors/sage-dark.css';
+@import '@radix-ui/colors/sage-alpha.css';
+@import '@radix-ui/colors/sage-dark-alpha.css';
+
+@import '@radix-ui/colors/orange.css';
+@import '@radix-ui/colors/orange-dark.css';
+@import '@radix-ui/colors/orange-alpha.css';
+@import '@radix-ui/colors/orange-dark-alpha.css';
+
+@import '@radix-ui/colors/cyan.css';
+@import '@radix-ui/colors/cyan-dark.css';
+@import '@radix-ui/colors/cyan-alpha.css';
+@import '@radix-ui/colors/cyan-dark-alpha.css';
+
+@import '@radix-ui/colors/gold.css';
+@import '@radix-ui/colors/gold-dark.css';
+@import '@radix-ui/colors/gold-alpha.css';
+@import '@radix-ui/colors/gold-dark-alpha.css';
+
+@import '@radix-ui/colors/tomato.css';
+@import '@radix-ui/colors/tomato-dark.css';
+@import '@radix-ui/colors/tomato-alpha.css';
+@import '@radix-ui/colors/tomato-dark-alpha.css';
+
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*             Sage (Neutral)          */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+:root {
+  --sage-contrast: white;
+}
+
+:root,
+.light,
+.light-theme {
+  --sage-surface: #ffffffcc;
+  --sage-indicator: var(--sage-9);
+  --sage-track: var(--sage-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --sage-surface: color(display-p3 1 1 1 / 0.8);
+    }
+  }
+}
+
+.dark,
+.dark-theme {
+  --sage-surface: #1e201f80;
+  --sage-indicator: var(--sage-9);
+  --sage-track: var(--sage-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --sage-surface: color(display-p3 0.1176 0.1255 0.1176 / 0.5);
+    }
+  }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*             Orange (Brand)          */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+:root {
+  --orange-contrast: white;
+}
+
+:root,
+.light,
+.light-theme {
+  --orange-surface: #fff5e9cc;
+  --orange-indicator: var(--orange-9);
+  --orange-track: var(--orange-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --orange-surface: color(display-p3 0.9961 0.9608 0.9176 / 0.8);
+    }
+  }
+}
+
+.dark,
+.dark-theme {
+  --orange-surface: #271d1380;
+  --orange-indicator: var(--orange-9);
+  --orange-track: var(--orange-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --orange-surface: color(display-p3 0.1412 0.1098 0.0706 / 0.5);
+    }
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*             Cyan (Secondary)        */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+:root {
+  --cyan-contrast: white;
+}
+
+:root,
+.light,
+.light-theme {
+  --cyan-surface: #eff9facc;
+  --cyan-indicator: var(--cyan-9);
+  --cyan-track: var(--cyan-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --cyan-surface: color(display-p3 0.9412 0.9765 0.9804 / 0.8);
+    }
+  }
+}
+
+.dark,
+.dark-theme {
+  --cyan-surface: #11252d80;
+  --cyan-indicator: var(--cyan-9);
+  --cyan-track: var(--cyan-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --cyan-surface: color(display-p3 0.0784 0.1412 0.1725 / 0.5);
+    }
+  }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*             Gold (Accent)           */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+:root {
+  --gold-contrast: white;
+}
+
+:root,
+.light,
+.light-theme {
+  --gold-surface: #f9f8efcc;
+  --gold-indicator: var(--gold-9);
+  --gold-track: var(--gold-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --gold-surface: color(display-p3 0.9765 0.9725 0.9412 / 0.8);
+    }
+  }
+}
+
+.dark,
+.dark-theme {
+  --gold-surface: #25231d80;
+  --gold-indicator: var(--gold-9);
+  --gold-track: var(--gold-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --gold-surface: color(display-p3 0.1412 0.1333 0.1098 / 0.5);
+    }
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*             Tomato (Danger)         */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+:root {
+  --tomato-contrast: white;
+}
+
+:root,
+.light,
+.light-theme {
+  --tomato-surface: #fff6f5cc;
+  --tomato-indicator: var(--tomato-9);
+  --tomato-track: var(--tomato-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --tomato-surface: color(display-p3 0.9922 0.9647 0.9608 / 0.8);
+    }
+  }
+}
+
+.dark,
+.dark-theme {
+  --tomato-surface: #2d191580;
+  --tomato-indicator: var(--tomato-9);
+  --tomato-track: var(--tomato-9);
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --tomato-surface: color(display-p3 0.1569 0.0941 0.0784 / 0.5);
+    }
+  }
+}
+

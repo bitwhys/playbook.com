@@ -1,0 +1,196 @@
+@import "../palette.css";
+
+@theme {
+  --color-gray-1: var(--sage-1);
+  --color-gray-2: var(--sage-2);
+  --color-gray-3: var(--sage-3);
+  --color-gray-4: var(--sage-4);
+  --color-gray-5: var(--sage-5);
+  --color-gray-6: var(--sage-6);
+  --color-gray-7: var(--sage-7);
+  --color-gray-8: var(--sage-8);
+  --color-gray-9: var(--sage-9);
+  --color-gray-10: var(--sage-10);
+  --color-gray-11: var(--sage-11);
+  --color-gray-12: var(--sage-12);
+
+  --color-gray-a1: var(--sage-a1);
+  --color-gray-a2: var(--sage-a2);
+  --color-gray-a3: var(--sage-a3);
+  --color-gray-a4: var(--sage-a4);
+  --color-gray-a5: var(--sage-a5);
+  --color-gray-a6: var(--sage-a6);
+  --color-gray-a7: var(--sage-a7);
+  --color-gray-a8: var(--sage-a8);
+  --color-gray-a9: var(--sage-a9);
+  --color-gray-a10: var(--sage-a10);
+  --color-gray-a11: var(--sage-a11);
+  --color-gray-a12: var(--sage-a12);
+
+  --color-gray-contrast: var(--sage-contrast);
+  --color-gray-surface: var(--sage-surface);
+  --color-gray-indicator: var(--sage-indicator);
+  --color-gray-track: var(--sage-track);
+}
+
+@theme {
+  --color-brand-1: var(--orange-1);
+  --color-brand-2: var(--orange-2);
+  --color-brand-3: var(--orange-3);
+  --color-brand-4: var(--orange-4);
+  --color-brand-5: var(--orange-5);
+  --color-brand-6: var(--orange-6);
+  --color-brand-7: var(--orange-7);
+  --color-brand-8: var(--orange-8);
+  --color-brand-9: var(--orange-9);
+  --color-brand-10: var(--orange-10);
+  --color-brand-11: var(--orange-11);
+  --color-brand-12: var(--orange-12);
+
+  --color-brand-a1: var(--orange-a1);
+  --color-brand-a2: var(--orange-a2);
+  --color-brand-a3: var(--orange-a3);
+  --color-brand-a4: var(--orange-a4);
+  --color-brand-a5: var(--orange-a5);
+  --color-brand-a6: var(--orange-a6);
+  --color-brand-a7: var(--orange-a7);
+  --color-brand-a8: var(--orange-a8);
+  --color-brand-a9: var(--orange-a9);
+  --color-brand-a10: var(--orange-a10);
+  --color-brand-a11: var(--orange-a11);
+  --color-brand-a12: var(--orange-a12);
+
+  --color-brand-contrast: var(--orange-contrast);
+  --color-brand-surface: var(--orange-surface);
+  --color-brand-indicator: var(--orange-indicator);
+  --color-brand-track: var(--orange-track);
+}
+
+@theme {
+  --color-secondary-1: var(--cyan-1);
+  --color-secondary-2: var(--cyan-2);
+  --color-secondary-3: var(--cyan-3);
+  --color-secondary-4: var(--cyan-4);
+  --color-secondary-5: var(--cyan-5);
+  --color-secondary-6: var(--cyan-6);
+  --color-secondary-7: var(--cyan-7);
+  --color-secondary-8: var(--cyan-8);
+  --color-secondary-9: var(--cyan-9);
+  --color-secondary-10: var(--cyan-10);
+  --color-secondary-11: var(--cyan-11);
+  --color-secondary-12: var(--cyan-12);
+
+  --color-secondary-a1: var(--cyan-a1);
+  --color-secondary-a2: var(--cyan-a2);
+  --color-secondary-a3: var(--cyan-a3);
+  --color-secondary-a4: var(--cyan-a4);
+  --color-secondary-a5: var(--cyan-a5);
+  --color-secondary-a6: var(--cyan-a6);
+  --color-secondary-a7: var(--cyan-a7);
+  --color-secondary-a8: var(--cyan-a8);
+  --color-secondary-a9: var(--cyan-a9);
+  --color-secondary-a10: var(--cyan-a10);
+  --color-secondary-a11: var(--cyan-a11);
+  --color-secondary-a12: var(--cyan-a12);
+
+  --color-secondary-contrast: var(--cyan-contrast);
+  --color-secondary-surface: var(--cyan-surface);
+  --color-secondary-indicator: var(--cyan-indicator);
+  --color-secondary-track: var(--cyan-track);
+}
+
+@theme {
+  --color-accent-1: var(--gold-1);
+  --color-accent-2: var(--gold-2);
+  --color-accent-3: var(--gold-3);
+  --color-accent-4: var(--gold-4);
+  --color-accent-5: var(--gold-5);
+  --color-accent-6: var(--gold-6);
+  --color-accent-7: var(--gold-7);
+  --color-accent-8: var(--gold-8);
+  --color-accent-9: var(--gold-9);
+  --color-accent-10: var(--gold-10);
+  --color-accent-11: var(--gold-11);
+  --color-accent-12: var(--gold-12);
+
+  --color-accent-a1: var(--gold-a1);
+  --color-accent-a2: var(--gold-a2);
+  --color-accent-a3: var(--gold-a3);
+  --color-accent-a4: var(--gold-a4);
+  --color-accent-a5: var(--gold-a5);
+  --color-accent-a6: var(--gold-a6);
+  --color-accent-a7: var(--gold-a7);
+  --color-accent-a8: var(--gold-a8);
+  --color-accent-a9: var(--gold-a9);
+  --color-accent-a10: var(--gold-a10);
+  --color-accent-a11: var(--gold-a11);
+  --color-accent-a12: var(--gold-a12);
+
+  --color-accent-contrast: var(--gold-contrast);
+  --color-accent-surface: var(--gold-surface);
+  --color-accent-indicator: var(--gold-indicator);
+  --color-accent-track: var(--gold-track);
+}
+
+@theme {
+  --color-danger-1: var(--tomato-1);
+  --color-danger-2: var(--tomato-2);
+  --color-danger-3: var(--tomato-3);
+  --color-danger-4: var(--tomato-4);
+  --color-danger-5: var(--tomato-5);
+  --color-danger-6: var(--tomato-6);
+  --color-danger-7: var(--tomato-7);
+  --color-danger-8: var(--tomato-8);
+  --color-danger-9: var(--tomato-9);
+  --color-danger-10: var(--tomato-10);
+  --color-danger-11: var(--tomato-11);
+  --color-danger-12: var(--tomato-12);
+
+  --color-danger-a1: var(--tomato-a1);
+  --color-danger-a2: var(--tomato-a2);
+  --color-danger-a3: var(--tomato-a3);
+  --color-danger-a4: var(--tomato-a4);
+  --color-danger-a5: var(--tomato-a5);
+  --color-danger-a6: var(--tomato-a6);
+  --color-danger-a7: var(--tomato-a7);
+  --color-danger-a8: var(--tomato-a8);
+  --color-danger-a9: var(--tomato-a9);
+  --color-danger-a10: var(--tomato-a10);
+  --color-danger-a11: var(--tomato-a11);
+  --color-danger-a12: var(--tomato-a12);
+
+  --color-danger-contrast: var(--tomato-contrast);
+  --color-danger-surface: var(--tomato-surface);
+  --color-danger-indicator: var(--tomato-indicator);
+  --color-danger-track: var(--tomato-track);
+}
+
+@theme {
+  --color-black-a1: var(--black-a1);
+  --color-black-a2: var(--black-a2);
+  --color-black-a3: var(--black-a3);
+  --color-black-a4: var(--black-a4);
+  --color-black-a5: var(--black-a5);
+  --color-black-a6: var(--black-a6);
+  --color-black-a7: var(--black-a7);
+  --color-black-a8: var(--black-a8);
+  --color-black-a9: var(--black-a9);
+  --color-black-a10: var(--black-a10);
+  --color-black-a11: var(--black-a11);
+  --color-black-a12: var(--black-a12);
+}
+
+@theme {
+  --color-white-a1: var(--white-a1);
+  --color-white-a2: var(--white-a2);
+  --color-white-a3: var(--white-a3);
+  --color-white-a4: var(--white-a4);
+  --color-white-a5: var(--white-a5);
+  --color-white-a6: var(--white-a6);
+  --color-white-a7: var(--white-a7);
+  --color-white-a8: var(--white-a8);
+  --color-white-a9: var(--white-a9);
+  --color-white-a10: var(--white-a10);
+  --color-white-a11: var(--white-a11);
+  --color-white-a12: var(--white-a12);
+}
