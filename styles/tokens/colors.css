@@ -1,36 +1,36 @@
 @import "../palette.css";
 
 @theme {
-  --color-gray-1: var(--sage-1);
-  --color-gray-2: var(--sage-2);
-  --color-gray-3: var(--sage-3);
-  --color-gray-4: var(--sage-4);
-  --color-gray-5: var(--sage-5);
-  --color-gray-6: var(--sage-6);
-  --color-gray-7: var(--sage-7);
-  --color-gray-8: var(--sage-8);
-  --color-gray-9: var(--sage-9);
-  --color-gray-10: var(--sage-10);
-  --color-gray-11: var(--sage-11);
-  --color-gray-12: var(--sage-12);
+  --color-gray-1: var(--sand-1);
+  --color-gray-2: var(--sand-2);
+  --color-gray-3: var(--sand-3);
+  --color-gray-4: var(--sand-4);
+  --color-gray-5: var(--sand-5);
+  --color-gray-6: var(--sand-6);
+  --color-gray-7: var(--sand-7);
+  --color-gray-8: var(--sand-8);
+  --color-gray-9: var(--sand-9);
+  --color-gray-10: var(--sand-10);
+  --color-gray-11: var(--sand-11);
+  --color-gray-12: var(--sand-12);
 
-  --color-gray-a1: var(--sage-a1);
-  --color-gray-a2: var(--sage-a2);
-  --color-gray-a3: var(--sage-a3);
-  --color-gray-a4: var(--sage-a4);
-  --color-gray-a5: var(--sage-a5);
-  --color-gray-a6: var(--sage-a6);
-  --color-gray-a7: var(--sage-a7);
-  --color-gray-a8: var(--sage-a8);
-  --color-gray-a9: var(--sage-a9);
-  --color-gray-a10: var(--sage-a10);
-  --color-gray-a11: var(--sage-a11);
-  --color-gray-a12: var(--sage-a12);
+  --color-gray-a1: var(--sand-a1);
+  --color-gray-a2: var(--sand-a2);
+  --color-gray-a3: var(--sand-a3);
+  --color-gray-a4: var(--sand-a4);
+  --color-gray-a5: var(--sand-a5);
+  --color-gray-a6: var(--sand-a6);
+  --color-gray-a7: var(--sand-a7);
+  --color-gray-a8: var(--sand-a8);
+  --color-gray-a9: var(--sand-a9);
+  --color-gray-a10: var(--sand-a10);
+  --color-gray-a11: var(--sand-a11);
+  --color-gray-a12: var(--sand-a12);
 
-  --color-gray-contrast: var(--sage-contrast);
-  --color-gray-surface: var(--sage-surface);
-  --color-gray-indicator: var(--sage-indicator);
-  --color-gray-track: var(--sage-track);
+  --color-gray-contrast: var(--sand-contrast);
+  --color-gray-surface: var(--sand-surface);
+  --color-gray-indicator: var(--sand-indicator);
+  --color-gray-track: var(--sand-track);
 }
 
 @theme {
