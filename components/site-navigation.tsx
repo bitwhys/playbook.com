@@ -116,7 +116,7 @@ export function SiteNavigation() {
                   render={<Link href="/explorations" />}
                   active={pathname === '/explorations'}
                   closeOnClick
-                  className="flex h-full min-h-40 flex-col rounded-xl border border-line bg-popover p-6 transition-colors hover:bg-gray-3"
+                  className="flex h-full min-h-40 flex-col rounded-xl border border-line bg-surface-raised p-6 transition-colors hover:bg-gray-3"
                 >
                   <span className="text-lg font-medium">
                     Explore the numbers
@@ -153,7 +153,7 @@ export function SiteNavigation() {
           collisionAvoidance={{ side: 'none', align: 'shift' }}
           className="z-40 w-(--anchor-width) max-w-[calc(100vw-1.5rem)]"
         >
-          <NavigationMenu.Popup className="max-h-[min(36rem,70dvh)] overflow-y-auto border-b border-line bg-popover text-foreground shadow-xl/10 outline-none">
+          <NavigationMenu.Popup className="max-h-[min(36rem,70dvh)] overflow-y-auto border-b border-line bg-surface-raised shadow-xl/10 outline-none">
             <NavigationMenu.Viewport />
           </NavigationMenu.Popup>
         </NavigationMenu.Positioner>

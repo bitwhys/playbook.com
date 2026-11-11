@@ -32,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full font-sans">
+      <body className="min-h-full">
         <a
           href="#main-content"
           className="sr-only fixed top-3 left-3 z-50 bg-foreground px-4 py-3 text-background focus:not-sr-only"

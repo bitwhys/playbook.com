@@ -10,14 +10,9 @@
 
 /* For shadcn/coss compatibility*/
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-panel: var(--panel);
-  --color-surface: var(--surface);
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-ink);
   --color-muted: var(--muted);
-  --color-line: var(--line);
-  --color-popover: var(--color-gray-2);
-  --color-popover-foreground: var(--foreground);
   --color-muted-foreground: var(--color-gray-11);
   --color-primary: var(--foreground);
   --color-primary-foreground: var(--background);
