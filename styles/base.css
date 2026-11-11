@@ -4,48 +4,12 @@
   }
 }
 
-.site-frame {
-  width: calc(100% - 2 * clamp(0.75rem, 2vw, 2rem));
-}
-
-/* Small joints emphasize where the horizontal rules meet the side rails. */
-.frame-rule::before,
-.frame-rule::after {
-  position: absolute;
-  bottom: -4px;
-  z-index: 1;
-  width: 7px;
-  height: 7px;
-  border: 1px solid var(--color-gray-6);
-  background: var(--surface);
-  content: '';
-  pointer-events: none;
-}
-
-.frame-rule::before {
-  left: -4px;
-}
-
-.frame-rule::after {
-  right: -4px;
-}
-
-.drafting-grid {
-  background-position: 50%;
-  background-size: 1.5rem 1.5rem;
-  background-image: radial-gradient(
-    circle at center,
-    var(--color-gray-a8) 1px,
-    transparent 1.2px
-  );
-}
-
-footer.frame-rule::before,
-footer.frame-rule::after {
-  top: -4px;
-  bottom: auto;
-}
-
+/*
+ * Keep this override outside @layer base: !important already beats normal
+ * transition utilities. Important declarations reverse layer order, and
+ * layered important declarations beat unlayered ones; moving this into base
+ * would give it additional precedence over other important overrides.
+ */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

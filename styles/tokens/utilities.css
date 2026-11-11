@@ -1,0 +1,44 @@
+@utility site-frame {
+  /*
+   * Frame width = containing block width minus two equal outer gutters.
+   * Each gutter prefers 2vw (2% of viewport width), clamped between
+   * 0.75rem on small screens and 2rem on large screens.
+   * Pair with mx-auto to center the frame. A separate max-width can cap
+   * the frame's width, leaving larger outer margins on wide screens.
+   */
+  width: calc(100% - 2 * clamp(0.75rem, 2vw, 2rem));
+}
+
+@utility drafting-grid {
+  background-position: 50%;
+  background-size: 1.5rem 1.5rem;
+  background-image: radial-gradient(
+    circle at center,
+    var(--color-gray-a8) 1px,
+    transparent 1.2px
+  );
+}
+
+/* Small joints emphasize where the horizontal rules meet the side rails. */
+@utility frame-rule {
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: -4px;
+    z-index: 1;
+    width: 7px;
+    height: 7px;
+    border: 1px solid var(--color-gray-6);
+    background: var(--color-surface);
+    content: '';
+    pointer-events: none;
+  }
+
+  &::before {
+    left: -4px;
+  }
+
+  &::after {
+    right: -4px;
+  }
+}

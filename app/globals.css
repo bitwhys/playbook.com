@@ -4,6 +4,7 @@
 @import "../styles/tokens/typography.css";
 @import "../styles/tokens/shadows.css";
 @import "../styles/tokens/semantics.css";
+@import "../styles/tokens/utilities.css";
 @import "../styles/base.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
