@@ -18,12 +18,13 @@ export function ExplorationGrid({
   return (
     <ul className="grid grid-cols-1 gap-px border-b border-line bg-line md:grid-cols-2">
       {items.map((item) => (
-        <li key={item.href} className="min-w-0 bg-background">
+        <li key={item.href} className="min-w-0 bg-surface">
           <Link
             href={item.href}
             className="group flex h-full flex-col focus-visible:relative focus-visible:z-10 focus-visible:-outline-offset-4"
           >
-            <div className="drafting-grid relative flex aspect-[2/1] items-center justify-center overflow-hidden border-b border-line">
+            {/* eslint-disable-next-line tailwindcss/classnames-order */}
+            <div className="drafting-grid relative flex aspect-2/1 items-center justify-center overflow-hidden border-b border-line">
               {item.preview}
             </div>
             <div className="flex flex-1 flex-col items-start px-5 py-7 sm:px-8 sm:py-9">

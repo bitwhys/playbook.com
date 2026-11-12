@@ -32,13 +32,13 @@ export function AutocompleteInput({
 
   return (
     <AutocompletePrimitive.InputGroup
-      className="relative not-has-[>*.w-full]:w-fit w-full text-foreground has-disabled:opacity-64"
+      className="relative w-full text-ink not-has-[>*.w-full]:w-fit has-disabled:opacity-64"
       data-slot="autocomplete-input-group"
     >
       {startAddon && (
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 start-px z-10 flex items-center ps-[calc(--spacing(3)-1px)] opacity-80 has-[+[data-size=sm]]:ps-[calc(--spacing(2.5)-1px)] [&_svg:not([class*='size-'])]:size-4.5 sm:[&_svg:not([class*='size-'])]:size-4 [&_svg]:-mx-0.5"
+          className="pointer-events-none absolute inset-y-0 inset-s-px z-10 flex items-center ps-[calc(--spacing(3)-1px)] opacity-80 has-[+[data-size=sm]]:ps-[calc(--spacing(2.5)-1px)] [&_svg:not([class*='size-'])]:size-4.5 sm:[&_svg:not([class*='size-'])]:size-4 [&_svg]:-mx-0.5"
           data-slot="autocomplete-start-addon"
         >
           {startAddon}
@@ -121,7 +121,7 @@ export function AutocompletePopup({
           )}
         >
           <AutocompletePrimitive.Popup
-            className="flex max-h-[min(var(--available-height),23rem)] flex-1 flex-col text-foreground"
+            className="flex max-h-[min(var(--available-height),23rem)] flex-1 flex-col text-ink"
             data-slot="autocomplete-popup"
             {...props}
           >
@@ -185,7 +185,7 @@ export function AutocompleteGroupLabel({
   return (
     <AutocompletePrimitive.GroupLabel
       className={cn(
-        'px-2 py-1.5 font-medium text-muted-foreground text-xs',
+        'px-2 py-1.5 font-medium text-ink-muted text-xs',
         className
       )}
       data-slot="autocomplete-group-label"
@@ -201,7 +201,7 @@ export function AutocompleteEmpty({
   return (
     <AutocompletePrimitive.Empty
       className={cn(
-        'not-empty:p-2 text-center text-base text-muted-foreground sm:text-sm',
+        'not-empty:p-2 text-center text-base text-ink-muted sm:text-sm',
         className
       )}
       data-slot="autocomplete-empty"
@@ -269,7 +269,7 @@ export function AutocompleteStatus({
   return (
     <AutocompletePrimitive.Status
       className={cn(
-        'px-3 py-2 font-medium text-muted-foreground text-xs empty:m-0 empty:p-0',
+        'px-3 py-2 font-medium text-ink-muted text-xs empty:m-0 empty:p-0',
         className
       )}
       data-slot="autocomplete-status"

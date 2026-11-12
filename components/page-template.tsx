@@ -21,7 +21,7 @@ export default function PageTemplate({
       >
         <h1
           id="page-title"
-          className="text-4xl font-display sm:text-5xl lg:text-6xl"
+          className="font-display text-4xl sm:text-5xl lg:text-6xl"
         >
           {title}
         </h1>
@@ -42,7 +42,7 @@ export default function PageTemplate({
         }
       >
         {contentLayout === 'panel' ? (
-          <div className="drafting-grid min-w-0 flex-1 rounded-xl border border-line bg-panel">
+          <div className="min-w-0 flex-1 rounded-xl border border-line bg-panel drafting-grid">
             {children}
           </div>
         ) : (

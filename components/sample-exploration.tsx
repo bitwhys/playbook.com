@@ -31,11 +31,11 @@ export function SampleExploration({
     <PageTemplate title={entry.title} description={entry.description}>
       <div className="grid min-h-full lg:grid-cols-[3fr_2fr]">
         <div className="flex min-h-64 items-center border-b border-line lg:border-r lg:border-b-0">
-          <div className="aspect-[2/1] w-full">
+          <div className="aspect-2/1 w-full">
             <ExplorationPreview variant={entry.sample!} />
           </div>
         </div>
-        <div className="flex flex-col items-start justify-center bg-background p-6 sm:p-10">
+        <div className="flex flex-col items-start justify-center bg-surface p-6 sm:p-10">
           <h2 className="font-display text-3xl">
             An exploration in the making
           </h2>
@@ -49,7 +49,7 @@ export function SampleExploration({
           </p>
           <Link
             href={`/explorations/${category}`}
-            className="mt-8 text-sm underline decoration-line underline-offset-4 hover:decoration-foreground"
+            className="mt-8 text-sm underline decoration-line underline-offset-4 hover:decoration-ink"
           >
             Back to {explorationCategories[category].title} explorations
           </Link>

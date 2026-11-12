@@ -4,14 +4,15 @@ export function ExplorationPreview({
   variant: 'bars' | 'curve' | 'scatter'
 }) {
   return (
-    <div className="relative h-full w-full p-6 sm:p-10">
+    // eslint-disable-next-line tailwindcss/classnames-order
+    <div className="relative p-6 sm:p-10 size-full">
       <span className="absolute top-4 left-5 text-xs text-gray-11">
         Sample exploration
       </span>
       <svg
         aria-hidden="true"
         viewBox="0 0 480 200"
-        className="h-full w-full"
+        className="size-full"
         fill="none"
       >
         <path
@@ -38,7 +39,7 @@ export function ExplorationPreview({
               height={height}
               rx="2"
               fill="currentColor"
-              className={i === 5 ? 'text-accent-9' : 'text-gray-7'}
+              className={i === 5 ? 'text-brand-9' : 'text-gray-7'}
             />
           ))}
         {variant === 'curve' && (
@@ -47,7 +48,7 @@ export function ExplorationPreview({
               d="M40 165C130 165 135 30 240 30S350 165 450 165"
               stroke="currentColor"
               strokeWidth="3"
-              className="text-accent-9"
+              className="text-brand-9"
             />
             <path
               d="M240 30V170"
@@ -93,7 +94,7 @@ export function ExplorationPreview({
                 cy={y}
                 r="6"
                 fill="currentColor"
-                className={i % 3 === 0 ? 'text-accent-9' : 'text-gray-8'}
+                className={i % 3 === 0 ? 'text-brand-9' : 'text-gray-8'}
               />
             ))}
           </>

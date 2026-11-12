@@ -35,11 +35,10 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       <body className="min-h-full">
         <a
           href="#main-content"
-          className="sr-only fixed top-3 left-3 z-50 bg-foreground px-4 py-3 text-background focus:not-sr-only"
+          className="sr-only fixed top-3 left-3 z-50 bg-black-a12 px-4 py-3 text-white-a12 focus:not-sr-only"
         >
           Skip to content
         </a>
-        {/* .root allows base-ui portoled components to render always on top */}
 
         <ThemeProvider
           attribute="class"
@@ -47,7 +46,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
           enableSystem
           defaultTheme="light"
         >
-          <div className="site-frame mx-auto flex min-h-svh max-w-[1600px] flex-col border-x border-line root">
+          {/* .root allows base-ui portoled components to render always on top */}
+          <div className="root mx-auto flex min-h-svh site-frame max-w-400 flex-col border-x border-line">
             <Header />
             <main
               id="main-content"

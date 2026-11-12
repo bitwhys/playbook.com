@@ -50,6 +50,7 @@ const groups = [
   },
 ]
 
+// TODO: use semantic tokens instead of raw scale tokens
 const triggerClassName =
   'flex min-h-11 items-center gap-2 rounded-lg px-3 text-sm font-medium transition-colors hover:bg-gray-3 focus-visible:bg-gray-3 data-popup-open:bg-gray-3 data-active:bg-gray-3'
 

@@ -26,7 +26,7 @@ function CategoryPreview({ category }: { category: ExplorationCategory }) {
   return (
     <div
       aria-hidden="true"
-      className="flex size-24 items-center justify-center rounded-2xl border border-line bg-background shadow-xs sm:size-32"
+      className="flex size-24 items-center justify-center rounded-2xl border border-line bg-surface-raised shadow-xs sm:size-32"
     >
       <Icon weight="thin" className="size-14 text-gray-11 sm:size-20" />
     </div>
@@ -82,8 +82,8 @@ export function ExplorationIndex({
       {items.length > 0 ? (
         <ExplorationGrid items={items} />
       ) : (
-        <div className="drafting-grid flex min-h-96 items-center justify-center border-b border-line px-5 py-16 sm:min-h-128">
-          <div className="max-w-md border border-line bg-background p-8 text-center">
+        <div className="flex min-h-96 items-center justify-center border-b border-line drafting-grid px-5 py-16 sm:min-h-128">
+          <div className="max-w-md border border-line bg-surface-raised p-8 text-center">
             <h2 className="font-display text-2xl">No explorations yet</h2>
             <p className="mt-3 text-base leading-relaxed text-gray-11">
               New {heading.title === 'General' ? 'general' : heading.title}{' '}
