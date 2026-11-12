@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
+  // FIXME: this cases an error with Next.js 16.3 Instant Navigation feature (wrap in suspense)
   const { slug } = await params
   return <SampleExploration category="nfl" slug={slug} />
 }
