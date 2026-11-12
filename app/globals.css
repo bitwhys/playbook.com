@@ -6,6 +6,7 @@
 @import "../styles/tokens/semantics.css";
 @import "../styles/tokens/utilities.css";
 @import "../styles/base.css";
+@import "../styles/code.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 

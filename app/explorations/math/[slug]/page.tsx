@@ -9,7 +9,9 @@ type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
   return explorations
-    .filter((entry) => entry.category === 'math')
+    .filter(
+      (entry) => entry.category === 'math' && entry.slug !== 'small-samples'
+    )
     .map((entry) => ({ slug: entry.slug }))
 }
 

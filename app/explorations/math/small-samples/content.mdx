@@ -1,0 +1,44 @@
+import { SampleSizeWidget } from './sample-size-widget'
+
+This illustrative sample explores a simple question: why do small samples swing
+so much? It uses a hypothetical fair coin, not observed research data.
+
+## The same coin, different sample sizes
+
+Imagine repeating an experiment: flip a fair coin a fixed number of times, then
+record the proportion of heads. Even with the same coin, that proportion varies
+between experiments.
+
+The **standard error** describes the standard deviation of those proportions.
+Increase the number of flips below to see how it changes.
+
+<SampleSizeWidget />
+
+## The calculation
+
+For independent flips with probability `p` of heads and sample size `n`, the
+standard error is the square root of `p * (1 - p) / n`.
+
+```ts standard-error.ts
+const probability = 0.5
+const sampleSize = 100
+const standardError = Math.sqrt((probability * (1 - probability)) / sampleSize)
+// 0.05, or 5 percentage points
+```
+
+There are two useful consequences:
+
+- More flips reduce the variability of the proportion of heads.
+- Four times as many flips halve the standard error.
+
+> A larger sample improves precision under this model. It does not fix a biased
+> measurement process or make dependent observations independent.
+
+## Try it yourself
+
+1. Start at 100 flips: the standard error is 5 percentage points.
+2. Increase to 400 flips: it falls to 2.5 percentage points.
+3. Return to 10 flips and notice how much wider the variation can be.
+
+Explore the other [Math explorations](/explorations/math) for more questions
+about variation and evidence.

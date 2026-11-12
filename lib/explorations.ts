@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 export const explorationCategories = {
   nba: {
     title: 'NBA',
@@ -129,3 +131,11 @@ export const explorations: readonly Exploration[] = [
     sample: 'scatter',
   },
 ]
+
+export function getExploration(category: ExplorationCategory, slug: string) {
+  const entry = explorations.find(
+    (entry) => entry.category === category && entry.slug === slug
+  )
+  if (!entry) notFound()
+  return entry
+}

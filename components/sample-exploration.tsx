@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import PageTemplate from '@/components/page-template'
 import { ExplorationPreview } from '@/components/exploration-preview'
 import {
-  explorations,
+  getExploration,
   explorationCategories,
   type ExplorationCategory,
 } from '@/lib/explorations'
@@ -12,9 +12,7 @@ export function getSampleExploration(
   category: ExplorationCategory,
   slug: string
 ) {
-  const entry = explorations.find(
-    (entry) => entry.category === category && entry.slug === slug
-  )
+  const entry = getExploration(category, slug)
   if (!entry || !entry.sample) notFound()
   return entry
 }
