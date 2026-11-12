@@ -27,12 +27,12 @@
   :root {
     --surface: var(--color-gray-2);
     --surface-raised: #ffffff;
-    --surface-sunken: var(--gray-3);
-    --surface-sunken-alt: var(--gray-a3);
-    --surface-hover: var(--gray-3);
-    --surface-active: var(--gray-4);
-    --surface-selected: var(--gray-4);
-    --surface-muted: var(--gray-3);
+    --surface-sunken: var(--color-gray-3);
+    --surface-sunken-alt: var(--color-gray-a3);
+    --surface-hover: var(--color-gray-3);
+    --surface-active: var(--color-gray-4);
+    --surface-selected: var(--color-gray-4);
+    --surface-muted: var(--color-gray-3);
 
     --panel: var(--color-gray-3);
   }
